@@ -1,0 +1,718 @@
+@font-face{
+   font-family: 'nexablack';
+   font-style: normal;
+   font-weight: normal;
+   src: url(../fonts/Nexa-Black.otf);
+}
+
+#shakerdit {
+	overflow: visible;
+  animation-duration: .5s;
+  /*animation-delay: .2s;*/
+  animation-iteration-count: 4;
+  width: 40%;
+}
+
+#shakerdito{
+	overflow: visible;
+  animation-duration: .6s;
+  /*animation-delay: 2s;*/
+  animation-iteration-count: 1;
+  text-align: center;
+  margin-top: -150px;
+  width: 100%;
+}
+
+
+#dit_success {
+	overflow: visible;
+	/*animation-delay: 3s;*/
+	animation-duration: .6s;
+	width: 60%;
+}
+
+#shakerdit{
+	width: 30%;
+}
+
+div.meter{
+	width: 50%;
+}
+
+
+#dit_logo{
+	width: 80%; display: block;margin-left: auto; margin-right: auto; padding-top: 35px;
+}
+
+#shaker{
+	top: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+
+}
+
+select{
+    color: #fff;
+    background: url(../images3/cell.png) rgba(0,0,0,0); 
+    font-family: 'nexablack';
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 4px;
+    border: none;/* solid #8093BE;*/
+    width: 190px;
+    height: 40px;   
+	text-align: center;
+  	text-align-last: center;
+  	text-align:-moz-center;
+    text-align:-webkit-center;
+    }
+    
+option{
+        background-color: #99C1C0;
+        font-family: 'nexablack';
+        text-align: center;
+        text-align: -webkit-center;
+    }
+
+button {
+		color: #57BEC5;
+		font-family: 'Muli', sans-serif;
+	}
+
+.meter { 
+		box-sizing: initial;
+		height: 20px;
+		position: relative;
+		margin: 20px 0 20px 0; 
+		background: #60A0A0;
+		-moz-border-radius: 25px;
+		-webkit-border-radius: 25px;
+		border-radius: 25px;
+		padding: 10px;
+		-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+		-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+		box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+	}
+
+.meter > span {
+			display: block;
+			height: 100%;
+			   -webkit-border-top-right-radius: 8px;
+			-webkit-border-bottom-right-radius: 8px;
+			       -moz-border-radius-topright: 8px;
+			    -moz-border-radius-bottomright: 8px;
+			           border-top-right-radius: 8px;
+			        border-bottom-right-radius: 8px;
+			    -webkit-border-top-left-radius: 20px;
+			 -webkit-border-bottom-left-radius: 20px;
+			        -moz-border-radius-topleft: 20px;
+			     -moz-border-radius-bottomleft: 20px;
+			            border-top-left-radius: 20px;
+			         border-bottom-left-radius: 20px;
+			background-color: rgb(43,194,83);
+			background-image: -webkit-gradient(
+			  linear,
+			  left bottom,
+			  left top,
+			  color-stop(0, rgb(43,194,83)),
+			  color-stop(1, rgb(84,240,84))
+			 );
+			background-image: -moz-linear-gradient(
+			  center bottom,
+			  rgb(43,194,83) 37%,
+			  rgb(84,240,84) 69%
+			 );
+			-webkit-box-shadow: 
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			-moz-box-shadow: 
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			box-shadow: 
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			position: relative;
+			overflow: hidden;
+		}
+
+.meter > span:after, .animate > span > span {
+			content: "";
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			background-image: 
+			   -webkit-gradient(linear, 0 0, 100% 100%, 
+			      color-stop(.25, rgba(255, 255, 255, .2)), 
+			      color-stop(.25, transparent), color-stop(.5, transparent), 
+			      color-stop(.5, rgba(255, 255, 255, .2)), 
+			      color-stop(.75, rgba(255, 255, 255, .2)), 
+			      color-stop(.75, transparent), to(transparent)
+			   );
+			background-image: 
+				-moz-linear-gradient(
+				  -45deg, 
+			      rgba(255, 255, 255, .2) 25%, 
+			      transparent 25%, 
+			      transparent 50%, 
+			      rgba(255, 255, 255, .2) 50%, 
+			      rgba(255, 255, 255, .2) 75%, 
+			      transparent 75%, 
+			      transparent
+			   );
+			z-index: 1;
+			-webkit-background-size: 50px 50px;
+			-moz-background-size: 50px 50px;
+			-webkit-animation: move 2s linear infinite;
+			   -webkit-border-top-right-radius: 8px;
+			-webkit-border-bottom-right-radius: 8px;
+			       -moz-border-radius-topright: 8px;
+			    -moz-border-radius-bottomright: 8px;
+			           border-top-right-radius: 8px;
+			        border-bottom-right-radius: 8px;
+			    -webkit-border-top-left-radius: 20px;
+			 -webkit-border-bottom-left-radius: 20px;
+			        -moz-border-radius-topleft: 20px;
+			     -moz-border-radius-bottomleft: 20px;
+			            border-top-left-radius: 20px;
+			         border-bottom-left-radius: 20px;
+			overflow: hidden;
+		}
+		
+		.animate > span:after {
+			display: none;
+		}
+		
+		@-webkit-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
+
+		.blue > span {
+			background-color: #57BEC5;
+			background-image: -moz-linear-gradient(top, #57BEC5, #326F6F);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #57BEC5),color-stop(1, #326F6F));
+			background-image: -webkit-linear-gradient(#57BEC5, #326F6F); 
+		}
+		
+		
+		.nostripes > span > span, .nostripes > span:after {
+			-webkit-animation: none;
+			background-image: none;
+		}
+
+
+
+
+.slidecontainer {
+    width: 100%;
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+    background-image: url('../images3/barback.png');
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 55px;
+    height: 50px;
+    padding-top: 90px;
+    border: 0;
+    background: url('../images3/bar.png');
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.slider::-moz-range-thumb {
+    width: 60px;
+    height: 50px;
+    border: 0;
+    background: url('../images3/bar.png');
+    cursor: pointer;
+}
+
+
+div.dit {	
+	font-family: 'Muli', sans-serif;
+	}
+
+p.dit{
+	font-family: 'Muli', sans-serif;
+	font-size: 1.0rem;
+	margin-bottom: 1.0rem;
+	}
+
+h1.logotitle {
+		color: #8FE4C8;
+		font-family: 'Muli', sans-serif;
+		font-size: 1.0rem;
+		padding-top: 18px; text-align: center;
+		padding-bottom: 18px;
+	}
+
+h1.dit {
+		color: #0B4147;
+		font-family: 'Muli', sans-serif;
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		text-align: center;
+		font-weight: bold;
+	}
+
+h2.dit {
+		color: #0B4147;
+		font-family: 'Muli', sans-serif;
+		font-size: 1.0rem;
+		margin-bottom: 1.0rem;
+		margin-top: 0.8rem;
+		text-align: left;
+		font-weight: bold;
+	}
+
+.justif {
+		color: #0B4147;
+		text-align: justify;
+    	text-justify: inter-word;
+	}
+
+.dit_frame{
+		height: 100vh; width: 100%;
+	}
+
+button:hover, button:active, button:focus{
+		color: #fff;
+		background-color: #B2AF9E!important;
+		border-color: #B2AF9E!important;
+	}
+
+
+.btn-primary, .btn {
+		color: #fff;
+		background-color: #57BEC5!important;
+		border-color: #57BEC5!important;	
+	}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+		color: #fff;
+		background-color: #000000!important;
+		border-color: #000000!important;
+		box-shadow: none;
+	}
+
+.btn:hover, .btn:active, .btn:focus {
+		color: #fff;
+		background-color: #000000!important;
+		border-color: #000000!important;
+		box-shadow: none;
+	}
+
+.dit_hiddenx{			
+		visibility: hidden;
+	}
+
+.nodisplay{
+		display: none;
+	}
+
+p.returnlabel{
+		text-align: center; font-size: 14px;
+	}
+
+.rotatereturn{
+		margin-top: 50px; margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto; width: 10%;"		
+		border-radius:50%;    
+		-webkit-transition: -webkit-transform .8s ease-in-out;
+		-ms-transition: -ms-transform .8s ease-in-out;
+		transition: transform .8s ease-in-out;   
+	}
+
+.rotatereturn:hover{
+		transform:rotate(-360deg);
+		-ms-transform:rotate(-360deg);
+		-webkit-transform:rotate(-360deg);
+	}
+
+.dit_video{
+		width: 90%; float: none; margin: 20px auto; padding: 10px, 0px, 10px, 0px;
+	}
+
+.dit_wrapper {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 50%;
+		top: -100px;
+	}
+
+#dit_slide, #alcoholimg, #powderdrugimg, #methimg, #marijuanaimg, #heroinimg {
+		position: absolute;
+		left: -600px;
+		height: 100%;
+		width: 100%;
+		transition: 0.5s;
+		padding: 0;
+	}
+
+#dit_slide2, #alcoholimg-r, #powderdrugimg-r, #methimg-r, , #marijuanaimg-r, #heroinimg-r  {
+		 position: absolute;
+		 right: -600px;
+		 width: 100%;
+		 height: 100%;
+		 transition: 0.5s;
+		 padding: 0;
+	}
+
+#submitbutton{
+		visibility: hidden; text-align: center; padding: 0; /*margin-top: 10%;*/
+	}
+
+#imageslide{
+		padding: 0px; margin: 0px; width: 100%;
+	}
+
+#imageslide_l, #imageslide_r{
+		display: none;
+	}
+
+#selection1{
+		margin-bottom: 10px;
+	}
+
+.textarticle{
+		padding: 5px;	
+	}
+
+#information, #intro{
+		width: 100%;margin: 0 auto;
+	}
+
+.dit_form{
+		position: relative;
+		padding-bottom: 18px;
+		text-align: center;
+		z-index: 9999;
+	}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+		/* For tablets: */
+        #dit_logo{
+			width: 50%; display: block;margin-left: auto; margin-right: auto; padding-top: 35px;
+		}
+
+
+		#shakerdit {
+			overflow: visible;
+
+		}
+
+		#shakerdito{
+			overflow: visible;
+
+		  margin-top: -110px;
+
+		}
+
+		.buttondit{
+			width: 90%;
+		}
+
+		#shakerdit{
+			width: 70%;
+		}
+
+		div.meter{
+			width: 100%;
+		}
+		#dit_success {
+		overflow: visible;
+			width: 100%;
+			  margin-top: 10px;
+		}
+
+
+		#imageslide_l, #imageslide_r{
+			display: inline-block;
+		}
+
+		p.dit{
+
+			font-size: 1.0rem;
+		}
+
+		h1.logotitle {
+
+			font-size: 2.0rem;
+		}
+
+		h1.dit {
+
+			font-size: 2.0rem;
+
+		}
+
+		h2.dit {
+
+			font-size: 1.8rem;
+
+		}
+
+
+		#submitbutton{
+			visibility: hidden; text-align: center; padding: 0; margin-top: 0%; width: 10%;
+		}
+		#submitbutton button{
+			font-size: 10px;
+			width: auto;
+
+		}
+
+		.dit_wrapper {
+		    position: relative;
+		    overflow: hidden;
+		    width: 100%;
+		    height: 20vh;
+		    top: -40px;
+		}
+
+		#dit_slide, #alcoholimg, #powderdrugimg, #methimg,  #marijuanaimg, #heroinimg {
+		    position: absolute;
+		    left: -600px;
+		    height: 20vh;
+		    width: 100%;
+		    transition: 0.5s;
+		    padding: 0;
+		}
+
+		#dit_slide2, #alcoholimg-r, #powderdrugimg-r, #methimg-r, #marijuanaimg-r, #heroinimg-r {
+		    position: absolute;
+		    right: -600px;
+		    width: 100%;
+		     height: 20vh;
+		    transition: 0.5s;
+		    padding: 0;
+		}
+
+		#imageslide{
+			padding: 0px; margin: 0px; width: 100%;
+		}
+
+		.textarticle{
+			padding: 50px;	
+		}
+
+		#information, #intro{
+			width: 80%;margin: 0 auto;
+		}
+
+
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    /* For desktop: */
+    	#dit_logo{
+			width: 35%; display: block;margin-left: auto; margin-right: auto; padding-top: 35px;
+		}
+
+		#imageslide_l, #imageslide_r{
+			display: inline-block;
+		}
+
+
+		div.meter{
+			width: 100%;
+		}
+
+		#shakerdit {
+			overflow: visible;
+			width: 40%;
+
+		}
+
+		#shakerdito{
+			overflow: visible;
+		  	margin-top: -170px;
+		}
+
+		#shakerdit{
+			width: 70%;
+		}
+
+		div.meter{
+			width: 100%;
+		}
+
+		#dit_success {
+			overflow: visible;
+			width: 100%;
+			 margin-top: 10px;
+		}
+
+		select{
+			color: #ffffff;
+			border-radius: 4px;
+			font-family: 'nexablack';
+			text-align: center;
+  			text-align-last: center;
+  			
+  			    text-align:-moz-center;
+    			text-align:-webkit-center;
+
+		}
+
+		option {
+		  text-align: center;
+		  text-align: -webkit-center;
+
+		}
+
+		button {
+			color: #57BEC5;
+			font-family: 'Muli', sans-serif;
+		}
+
+
+		p.dit, ul.dit{
+			font-size: 1.2rem;
+			margin-bottom: 1.2rem;
+		}
+
+		h1.logotitle {
+			font-size: 2.0rem;
+		}
+
+		h1.dit {
+			font-size: 2.5rem;
+			margin-bottom: 2.5rem;
+		}
+
+		h2.dit {
+			font-size: 1.8rem;
+			margin-bottom: 1.2rem;
+		}
+
+		.dit_video{
+			width: 70%; float: none; margin: 50px auto; padding: 30px, 0px, 30px, 0px;
+		}
+
+		button:hover, button:active, button:focus{
+			color: #fff;
+		    background-color: #B2AF9E!important;
+		    border-color: #B2AF9E!important;
+
+		}
+
+		.btn-primary, .btn {
+			color: #fff;
+		    background-color: #57BEC5!important;
+		    border-color: #57BEC5!important;
+		}
+
+		.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+			color: #fff;
+		    background-color: #000000!important;
+		    border-color: #000000!important;
+		    box-shadow: none;
+		}
+
+		.btn:hover, .btn:active, .btn:focus {
+			color: #fff;
+		    background-color: #000000!important;
+		    border-color: #000000!important;
+		    box-shadow: none;
+		}
+
+		#submitbutton{
+			visibility: hidden; text-align: center; padding: 0; margin-top: 0%; width: 10%;
+		}
+		#submitbutton button{
+			font-size: inherit;
+			width: auto;
+
+		}
+
+		p.returnlabel{
+			text-align: center; font-size: 18px;
+		}
+		.rotatereturn{
+			margin-top: 50px; margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto; width: 5%;"		
+		    border-radius:50%;    
+		    -webkit-transition: -webkit-transform .8s ease-in-out;
+		    -ms-transition: -ms-transform .8s ease-in-out;
+		    transition: transform .8s ease-in-out;
+	      
+		}
+
+		.rotatereturn:hover{
+		    transform:rotate(-360deg);
+		    -ms-transform:rotate(-360deg);
+		    -webkit-transform:rotate(-360deg);
+		}
+
+		.dit_wrapper {
+		    position: relative;
+		    overflow: hidden;
+		    width: 100%;
+		    height: 50vh;
+		    top: -100px;
+		}
+
+		#dit_slide, #alcoholimg, #powderdrugimg, #methimg,  #marijuanaimg, #heroinimg {
+		    position: absolute;
+		    left: -600px;
+		     height: 50vh;
+		    width: 100%;
+		    transition: 0.5s;
+		    padding: 0;
+		}
+
+		#dit_slide2, #alcoholimg-r, #powderdrugimg-r, #methimg-r, #marijuanaimg-r, #heroinimg-r {
+		    position: absolute;
+		    right: -600px;
+		    width: 100%;
+		     height: 50vh;
+		    transition: 0.5s;
+		    padding: 0;
+		}
+
+		#submitbutton{
+			visibility: hidden; text-align: center; padding: 0; 
+		}
+
+		#imageslide{
+			padding: 0px; margin: 0px; width: 100%;
+		}
+
+		.textarticle{
+			padding: 50px;	
+		}
+
+		#information, #intro{
+			width: 80%;margin: 0 auto;
+		}
+
+
+
+}
